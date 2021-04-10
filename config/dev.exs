@@ -3,10 +3,11 @@ use Mix.Config
 # Configure your database
 config :my_app, MyApp.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "",
   database: "my_app_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
+  port: 5665,
   pool_size: 10
 
 # For development, we disable any cache and enable
